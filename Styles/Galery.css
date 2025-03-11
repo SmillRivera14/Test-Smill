@@ -1,0 +1,45 @@
+.galery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 60px 96px;
+    justify-content: center;
+}
+
+.galery-view {
+    background: #222; /* Fondo oscuro para resaltar el texto */
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-info {
+    font-size: 16px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #f5a623; /* Color destacado para el precio */
+}
+
+/* Responsividad */
+@media (max-width: 750px) {
+    .galery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .galery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

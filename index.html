@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Styles/General.css">
+  <link rel="stylesheet" href="/Styles/Galery.css">
+  <link rel="stylesheet" href="/Styles/serch.css">
+  <link rel="stylesheet" href="/Styles/modal-update.css">
+  <link rel="stylesheet" href="/Styles/Modal.css"><link rel="stylesheet" href="style.css">
+  <script src="index.mjs" type="module"></script>
+  <script src="crear.mjs" type="module"></script>
+  <script src="update.mjs" type="module"></script>
+  <title>Test</title>
+</head>
+
+<main>
+
+  <h1>Lista de productos</h1>
+  <section class="galery-grid">
+    
+
+  </section>
+</main>
+  <!-- Botón para abrir el modal -->
+  <button id="openModalBtn">Agregar Producto</button>
+
+  <!-- Modal (Tarjeta) -->
+  <div id="productModal" class="modal">
+    <div class="modal-card">
+      <span id="closeModalBtn" class="close-btn">&times;</span>
+      <h2>Crear Producto</h2>
+      
+      <form id="productForm">
+        <label for="productName">Nombre:</label>
+        <input type="text" id="productName" name="nombre" required><br><br>
+        
+        <label for="productPrice">Precio:</label>
+        <input type="number" id="productPrice" name="precio" required><br><br>
+  
+        <button type="submit">Crear Producto</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="updateModal" class="modal-update">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Actualizar Producto</h2>
+      <form id="updateForm">
+        <label for="editName">Nombre:</label>
+        <input type="text" id="editName" placeholder="Nuevo nombre">
+        <label for="editPrice">Precio:</label>
+        <input type="number" id="editPrice" placeholder="Nuevo precio">
+        <button type="submit" id="saveChanges">Guardar Cambios</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
